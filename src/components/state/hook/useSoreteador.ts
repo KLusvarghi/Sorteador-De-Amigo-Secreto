@@ -7,7 +7,6 @@ import { useListaParticipantes } from "./useListaParticipantes"
 
 export const useSorteador = () => {
   const participantes = useListaParticipantes()
-  console.log(participantes)
 
   const setResultado = useSetRecoilState(resultadoAmigoSecreto)
   return () => {

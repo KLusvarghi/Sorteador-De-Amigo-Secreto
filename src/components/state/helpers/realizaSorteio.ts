@@ -11,7 +11,6 @@ export function realizaSorteio(participantes: string[]){
     // utilizaremos um biblioteca 'just-shuffle' para embaralhar
       // apenas chamando a função 'shuffle' e passando a lista
     const embaralhado = shuffle(participantes)
-    console.log(participantes)
 
     // criando uma constante que irá agrupar o resultado, podendo uilziar a estrutura de dados 'Map' que é um 'dicionario'
       // onde esse map terá uma chave que é string e um valor que é uma string tambem

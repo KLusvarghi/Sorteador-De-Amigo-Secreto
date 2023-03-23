@@ -26,6 +26,12 @@ const Sorteio = () => {
     if (resultado.has(participanteDaVez)) {
       // pegando o resultado do amigo secreto do "participanteDaVez"
       setAmigoSecreto(resultado.get(participanteDaVez)!); // ele me dará erro, mas colocamos um "!" para dizer que sabemos o que estamos fazendo
+      
+      // Após 5 segundos ele tira o nome da tela
+      setTimeout(() => {
+        console.log('5 segudos')
+        setAmigoSecreto('')
+      }, 5000)
     }
   };
 
